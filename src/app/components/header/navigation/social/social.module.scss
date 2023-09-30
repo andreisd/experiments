@@ -26,6 +26,11 @@
   justify-content: center;
   text-transform: uppercase;
 
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
   p {
     margin: 0;
     margin-bottom: -1rem;

@@ -16,5 +16,11 @@
     letter-spacing: -0.085rem;
     color: white;
     text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 11vw;
+      line-height: 1.2;
+      text-align: center;
+    }
   }
 }
