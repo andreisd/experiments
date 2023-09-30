@@ -1,0 +1,75 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  color: white;
+  max-height: 100vh;
+  overflow: hidden;
+
+  .bar {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    z-index: 3;
+  }
+
+  .title {
+    transition: color 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+}
+
+.burger {
+  position: relative;
+  height: 2.8rem;
+  overflow: hidden;
+  cursor: pointer;
+  padding-right: 3.4rem;
+
+  .burgerText {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .burgerOpen,
+  .burgerClose {
+    transform: translateY(0);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .burgerDot {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: calc(50% - 0.375rem);
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: right 0.15s cubic-bezier(0.76, 0, 0.24, 1),
+      background-color 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+
+    &:last-child {
+      right: 1.5rem;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      .burgerDot {
+        right: 0.15rem;
+
+        &:last-child {
+          right: 1.35rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 13rem;
+    line-height: 13rem;
+    font-weight: 400;
+    letter-spacing: -0.085rem;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .image {
+    object-fit: cover;
+  }
+}
