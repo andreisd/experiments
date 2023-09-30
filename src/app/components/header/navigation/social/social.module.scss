@@ -3,6 +3,12 @@
   justify-content: center;
   gap: 3rem;
   margin-top: 6rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 3rem;
+  }
 }
 
 .link {

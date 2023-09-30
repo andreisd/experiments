@@ -1,6 +1,10 @@
 .menu {
   background-color: white;
   padding: 7.8rem 2rem 2rem 2rem;
+
+  @media (max-width: 767px) {
+    padding: 4.8rem 2rem 2rem 2rem;
+  }
 }
 
 .link {
@@ -16,6 +20,11 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    font-size: 14vw;
+    line-height: 1.4;
+  }
 
   p {
     margin: 0;
