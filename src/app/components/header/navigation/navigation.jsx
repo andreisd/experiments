@@ -14,34 +14,34 @@ const links = [
   },
   {
     title: "Collections",
-    href: "/collections",
+    href: "/",
     src: "shop.png",
   },
   {
     title: "Archive",
-    href: "/archive",
+    href: "/",
     src: "lookbook.png",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "/",
     src: "contact.png",
   },
 ];
 
 const socialLinks = [
   {
-    title: "Instagram",
+    title: "(Instagram)",
     href: "https://www.instagram.com/andreisavue/",
     target: "_blank",
   },
   {
-    title: "LinkedIn",
+    title: "(LinkedIn)",
     href: "https://www.linkedin.com/in/andrei-savud/",
     target: "_blank",
   },
   {
-    title: "GitHub",
+    title: "(GitHub)",
     href: "https://github.com/andreisd",
     target: "_blank",
   },
