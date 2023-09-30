@@ -1,8 +1,5 @@
 import "./globals.css";
-import Header from "./components/header/header.jsx";
-import Hero from "./components/hero/hero.jsx";
 import localFont from "next/font/local";
-import Intro from "./components/intro/intro";
 
 export const metadata = {
   title: "Overlay Menu",
@@ -62,12 +59,7 @@ const NeueWorld = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={NeueWorld.className}>
-        <Header />
-        <Hero />
-        <Intro />
-        {children}
-      </body>
+      <body className={NeueWorld.className}>{children}</body>
     </html>
   );
 }
