@@ -1,0 +1,51 @@
+.section {
+  min-height: 100vh;
+  padding: 20vw 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  .imageWrap {
+    max-width: 20vw;
+    aspect-ratio: 0.85;
+    position: relative;
+    margin: auto;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .imagePrompt {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: white;
+    opacity: 0.5;
+    text-transform: uppercase;
+    max-width: 20vw;
+    margin: auto;
+  }
+
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 11rem;
+    line-height: 11rem;
+    font-weight: 400;
+    letter-spacing: -0.085rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+
+    @media (max-width: 767px) {
+      font-size: 11vw;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+}

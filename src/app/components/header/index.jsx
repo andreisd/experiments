@@ -1,19 +1,23 @@
 "use client";
 
-import styles from "./header.module.scss";
+import styles from "./style.module.scss";
 import { motion as m, AnimatePresence } from "framer-motion";
 import { color, bgColor, opacity, translateY, pushContent } from "./animations";
 import { useState } from "react";
-import Navigation from "./navigation/navigation";
+import Navigation from "./navigation/index.jsx";
 
-export default function Header() {
+export default function Header({ isBlack, setIsBlack }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
       <div className={styles.header}>
         <div className={styles.bar}>
-          <m.div variants={color} animate={isMenuOpen ? "open" : "closed"} className={styles.title}>
+          <m.div
+            variants={color}
+            animate={isMenuOpen || isBlack ? "open" : "closed"}
+            className={styles.title}
+          >
             ANDREI SAVU
           </m.div>
 
@@ -23,7 +27,11 @@ export default function Header() {
             }}
             className={styles.burger}
           >
-            <m.div variants={color} animate={isMenuOpen ? "open" : "closed"} className={styles.burgerText}>
+            <m.div
+              variants={color}
+              animate={isMenuOpen || isBlack ? "open" : "closed"}
+              className={styles.burgerText}
+            >
               <m.div
                 variants={translateY}
                 animate={isMenuOpen ? "open" : "closed"}
@@ -41,12 +49,12 @@ export default function Header() {
             </m.div>
             <m.div
               variants={bgColor}
-              animate={isMenuOpen ? "open" : "closed"}
+              animate={isMenuOpen || isBlack ? "open" : "closed"}
               className={styles.burgerDot}
             ></m.div>
             <m.div
               variants={bgColor}
-              animate={isMenuOpen ? "open" : "closed"}
+              animate={isMenuOpen || isBlack ? "open" : "closed"}
               className={styles.burgerDot}
             ></m.div>
           </div>

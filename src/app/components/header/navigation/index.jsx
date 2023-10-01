@@ -1,10 +1,10 @@
 "use client";
-import styles from "./navigation.module.scss";
+import styles from "./style.module.scss";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { height } from "../animations";
-import Menu from "./menu/menu";
-import Social from "./social/social";
+import Menu from "./menu/index.jsx";
+import Social from "./social/index.jsx";
 
 const links = [
   {

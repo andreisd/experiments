@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./hero.module.scss";
+import styles from "./style.module.scss";
 import Image from "next/image";
 import { useMotionValue, useScroll, useTransform } from "framer-motion";
 import { motion as m } from "framer-motion";
@@ -17,7 +17,14 @@ export default function Hero() {
         Fashion • Jewellery
       </m.h1>
       <m.div className={styles.imageWrap} style={{ scale: scale }}>
-        <Image className={styles.image} src="/hero.webp" alt="Fashion Jewellery" fill />
+        <Image
+          className={styles.image}
+          src="/hero.webp"
+          alt="Fashion Jewellery"
+          fill
+          placeholder="blur"
+          blurDataURL="/hero.webp"
+        />
       </m.div>
     </div>
   );

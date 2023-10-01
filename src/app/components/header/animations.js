@@ -14,6 +14,20 @@ export const opacity = {
   },
 };
 
+export const translateYList = {
+  initial: {
+    top: 0,
+  },
+  open: {
+    top: -30,
+    transition: { duration: 0 },
+  },
+  closed: {
+    top: 0,
+    transition: { duration: 0, delay: 0.1 },
+  },
+};
+
 export const translateY = {
   initial: {
     y: "0%",
@@ -34,11 +48,11 @@ export const color = {
   },
   open: {
     color: "black",
-    transition: { duration: 0.2 },
+    transition: { duration: 0 },
   },
   closed: {
     color: "white",
-    transition: { duration: 0.2 },
+    transition: { duration: 0 },
   },
 };
 
