@@ -9,7 +9,7 @@ import { useEffect } from "react";
 export default function Hero() {
   const { scrollYProgress } = useScroll();
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.3]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   return (
     <div className={styles.hero}>
