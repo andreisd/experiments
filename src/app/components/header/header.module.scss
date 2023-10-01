@@ -31,6 +31,10 @@
   cursor: pointer;
   padding-right: 3.4rem;
 
+  @media (max-width: 767px) {
+    height: 2.6rem;
+  }
+
   .burgerText {
     position: relative;
     text-transform: uppercase;

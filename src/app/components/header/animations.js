@@ -93,17 +93,17 @@ export const blur = {
 export const translate = {
   initial: {
     y: "-100%",
-    // opacity: 0,
+    opacity: 0,
   },
   enter: (i) => ({
     y: 0,
-    // opacity: 1,
-    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: i[0] },
+    opacity: 1,
+    transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1], delay: i[0] * 0.5 },
   }),
   exit: (i) => ({
     y: "-100%",
-    // opacity: 0,
-    transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1], delay: i[1] },
+    opacity: 0,
+    transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1], delay: i[1] * 0.5 },
   }),
 };
 
