@@ -2,7 +2,7 @@
 import styles from "./style.module.scss";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { height } from "../animations";
+import { height } from "../../animations";
 import Menu from "./menu/index.jsx";
 import Social from "./social/index.jsx";
 

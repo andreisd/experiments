@@ -7,4 +7,27 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+
+  .inner {
+    flex: 1;
+  }
+
+  .item {
+    position: relative;
+    background-color: white;
+    border-top: 0.1rem solid black;
+    text-align: center;
+    padding-top: 0rem;
+    color: black;
+    margin-bottom: -4.5rem;
+    cursor: pointer;
+
+    p {
+      pointer-events: none;
+      font-size: 9rem;
+      line-height: 11rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
 }

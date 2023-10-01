@@ -2,7 +2,7 @@
 
 import styles from "./style.module.scss";
 import { motion as m, AnimatePresence } from "framer-motion";
-import { color, bgColor, opacity, translateY, pushContent } from "./animations";
+import { color, bgColor, opacity, translateY, pushContent } from "../animations";
 import { useState } from "react";
 import Navigation from "./navigation/index.jsx";
 

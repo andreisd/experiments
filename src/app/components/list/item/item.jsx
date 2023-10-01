@@ -2,7 +2,7 @@
 
 import styles from "./style.module.scss";
 import { motion as m } from "framer-motion";
-import { translateYList } from "../../header/animations";
+import { translateYList } from "../../animations";
 
 export default function Item({ items, selectedItem, setSelectedItem }) {
   return (
