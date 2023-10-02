@@ -77,8 +77,8 @@ export default function List({ setIsBlack }) {
           );
         })}
       </div>
-      {/* <Item items={items} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
-      {isInView ? setIsBlack(true) : setIsBlack(false)} */}
+      {/* <Item items={items} selectedItem={selectedItem} setSelectedItem={setSelectedItem} /> */}
+      {isInView ? setIsBlack(true) : setIsBlack(false)}
     </section>
   );
 }
